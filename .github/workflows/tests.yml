@@ -5,6 +5,10 @@ on:
     branches:
       - rc
       - master
+  pull_request:
+    branches:
+      - rc
+      - master
 
 jobs:
   build:
@@ -32,10 +36,6 @@ jobs:
       - name: Setup packages
         run: |
           npm i
-          npm i react@17 react-dom@17 --prefix="./packages/plasma-ui"
-          npm i react@17 react-dom@17 --prefix="./packages/plasma-core"
-          npm i react@17 react-dom@17 --prefix="./packages/plasma-icons"
-          npm i react@17 react-dom@17 --prefix="./packages/plasma-web"
           npx lerna bootstrap
 
       - name: Lint
