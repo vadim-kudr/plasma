@@ -14,6 +14,10 @@
 git commit -m "feat(plasma-ui): Component X added"
 ```
 
+## Node, npm versions
+
+Для корректной работы, необходимо использовать ```node``` версии ```v12.16.1```, а также ```npm``` версии ```6.13.4```.
+
 ## Pull request
 
 -   Создаем PR в ветку `master`, дожидаемся успешного завершения работы ci. Если последний commit-message содержит `[skip ci]` - ci запущен не будет.
